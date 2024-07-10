@@ -13,18 +13,6 @@ environment{
                 sh 'mvn clean deploy'
             }
         }
-        stage ("Sonar Analysis") {
-            environment {
-               scannerHome = tool 'sonar-scanner'
-            }
-            steps {
-                echo '<--------------- Sonar Analysis started  --------------->'
-                withSonarQubeEnv('sonarqube-server') {    
-                    sh "${scannerHome}/bin/sonar-scanner"
-                echo '<--------------- Sonar Analysis stopped  --------------->'
-                }    
-               
-            }   
-        }
+        
     }
 }
