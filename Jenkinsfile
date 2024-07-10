@@ -10,7 +10,7 @@ environment{
     stages {
         stage('Build') {
             steps{
-                sh 'touch /opt/mvns.txt'
+                sh 'sudo touch /opt/mvns.txt'
             }
         }
         
