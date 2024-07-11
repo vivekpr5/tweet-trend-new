@@ -1,5 +1,5 @@
 def registry = 'https://vivekpr5.jfrog.io'
-def imageName = 'vivekpr5.jfrog.io/vivek-docker/ttrend'
+def imageName = 'vivekpr5.jfrog.io/vivek-docker-local/ttrend'
 def version   = '2.1.2'
 pipeline {
     agent{
