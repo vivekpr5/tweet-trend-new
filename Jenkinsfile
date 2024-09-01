@@ -4,6 +4,4 @@ pipeline {
             label 'maven'
         }
     }
-
-    
 }
